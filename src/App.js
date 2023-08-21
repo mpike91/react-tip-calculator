@@ -73,7 +73,7 @@ function Service({ id, service, handleChangeService, children }) {
 function Payment({ bill, service }) {
   const values = Object.values(service);
   const average = values.reduce((acc, el) => acc + el, 0) / values.length;
-  const tip = Math.round((bill / 100) * average);
+  const tip = Math.round((bill * average) / 10) / 10;
   return (
     <div>
       <h3>
