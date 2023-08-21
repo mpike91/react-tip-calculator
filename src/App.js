@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./styles.css";
+
 const initialService = { 0: 0, 1: 0 };
 
 function App() {
